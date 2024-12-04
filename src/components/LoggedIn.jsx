@@ -1,7 +1,14 @@
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
+import { LogoutLink } from "@kinde-oss/kinde-auth-react/components";
+import { useCallback } from "react";
 
 export default function LoggedIn() {
-  const { user, logout } = useKindeAuth();
+  const { user, getClaims } = useKindeAuth();
+
+  const showClaims = useCallback(async () => {
+    const claims = await getClaims();
+    console.log(claims);
+  }, []);
 
   return (
     <>
@@ -9,10 +16,10 @@ export default function LoggedIn() {
         <nav className="nav container">
           <h1 className="text-display-3">KindeAuth</h1>
           <div className="profile-blob">
-            {user.picture !== "" ? (
+            {user?.picture !== "" ? (
               <img
                 className="avatar"
-                src={user.picture}
+                src={user?.picture}
                 alt="user profile avatar"
               />
             ) : (
@@ -25,9 +32,8 @@ export default function LoggedIn() {
               <p className="text-heading-2">
                 {user?.given_name} {user?.family_name}
               </p>
-              <button className="text-subtle" onClick={logout}>
-                Sign out
-              </button>
+              
+              <LogoutLink className="text-subtle">Sign out</LogoutLink>
             </div>
           </div>
         </nav>
@@ -42,6 +48,7 @@ export default function LoggedIn() {
               <br />
               Build the important stuff.
             </p>
+            <button onClick={showClaims} className="btn btn-light">Show claims</button>
           </div>
           <section className="next-steps-section">
             <h2 className="text-heading-1">Next steps for you</h2>

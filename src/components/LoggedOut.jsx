@@ -1,19 +1,15 @@
-import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
+import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-react/components";
 
 export default function LoggedOut() {
-  const { login, register } = useKindeAuth();
   return (
     <>
       <header>
         <nav className="nav container">
           <h1 className="text-display-3">KindeAuth</h1>
           <div>
-            <button className="btn btn-ghost sign-in-btn" onClick={login}>
-              Sign in
-            </button>
-            <button className="btn btn-dark" onClick={register}>
-              Sign up
-            </button>
+            <LoginLink connectionId="conn_01932fedb2e35cbe8109149a9e0b9c36" loginHint="daniel@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan</LoginLink>
+            <LoginLink connectionId="conn_01932fedb2e35cbe8109149a9e0b9c36" loginHint="daniel+2@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan2</LoginLink>
+            <RegisterLink className="btn btn-dark">Sign up</RegisterLink>
           </div>
         </nav>
       </header>
