@@ -33,7 +33,7 @@ export default function LoggedIn() {
                 {user?.given_name} {user?.family_name}
               </p>
               
-              <LogoutLink className="text-subtle">Sign out</LogoutLink>
+              <LogoutLink className="text-subtle">Signs out</LogoutLink>
             </div>
           </div>
         </nav>
