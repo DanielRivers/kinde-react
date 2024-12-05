@@ -7,8 +7,8 @@ export default function LoggedOut() {
         <nav className="nav container">
           <h1 className="text-display-3">KindeAuth</h1>
           <div>
-            <LoginLink connectionId="conn_01932fedb2e35cbe8109149a9e0b9c36" loginHint="daniel@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan</LoginLink>
-            <LoginLink connectionId="conn_01932fedb2e35cbe8109149a9e0b9c36" loginHint="daniel+2@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan2</LoginLink>
+            <LoginLink loginHint="daniel@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan</LoginLink>
+            <LoginLink loginHint="daniel+2@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan2</LoginLink>
             <RegisterLink className="btn btn-dark">Sign up</RegisterLink>
           </div>
         </nav>
