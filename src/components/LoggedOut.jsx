@@ -9,6 +9,8 @@ export default function LoggedOut() {
           <div>
             <LoginLink redirectURL="https://kinde.danielrivers.co.uk" loginHint="daniel@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan</LoginLink>
             <LoginLink loginHint="daniel+2@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan2</LoginLink>
+            <LoginLink loginHint="me@danielrivers.com" className="btn btn-ghost sign-in-btn">Sign in Me</LoginLink>
+            <LoginLink loginHint="dave@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dave</LoginLink>
             <RegisterLink className="btn btn-dark">Sign up</RegisterLink>
           </div>
         </nav>
