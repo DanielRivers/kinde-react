@@ -30,7 +30,7 @@ export default function LoggedIn() {
             )}
             <div>
               <p className="text-heading-2">
-                {user?.given_name} {user?.familyName}
+                {user?.givenName} {user?.familyName}
               </p>
               
               <LogoutLink className="text-subtle">Signs out</LogoutLink>
