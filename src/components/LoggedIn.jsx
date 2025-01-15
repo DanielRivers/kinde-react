@@ -24,13 +24,13 @@ export default function LoggedIn() {
               />
             ) : (
               <div className="avatar">
-                {user?.given_name?.[0]}
-                {user?.family_name?.[1]}
+                {user?.givenName?.[0]}
+                {user?.familyName?.[1]}
               </div>
             )}
             <div>
               <p className="text-heading-2">
-                {user?.given_name} {user?.family_name}
+                {user?.given_name} {user?.familyName}
               </p>
               
               <LogoutLink className="text-subtle">Signs out</LogoutLink>
