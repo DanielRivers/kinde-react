@@ -7,7 +7,7 @@ export default function LoggedOut() {
         <nav className="nav container">
           <h1 className="text-display-3">KindeAuth</h1>
           <div>
-            <LoginLink redirectURL="https://kinde.danielrivers.co.uk" orgCode="org_8c0b0e1337bc5" loginHint="daniel@kinde.com" className="btn btn-ghost sign-in-btn">Sign in</LoginLink>
+            <LoginLink isCreateOrg={true} className="btn btn-ghost sign-in-btn">Sign in</LoginLink>
             {/* <LoginLink loginHint="daniel+2@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan2</LoginLink>
             <LoginLink loginHint="me@danielrivers.com" className="btn btn-ghost sign-in-btn">Sign in Me</LoginLink>
             <LoginLink loginHint="dave@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dave</LoginLink> */}

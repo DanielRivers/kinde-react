@@ -1,14 +1,42 @@
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
 import { LogoutLink } from "@kinde-oss/kinde-auth-react/components";
 import { useCallback } from "react";
+import React from "react";
 
 export default function LoggedIn() {
-  const { user, getClaims } = useKindeAuth();
+  const { user, getClaims, getClaim, getPermission, getFlag, getUserProfile, login } = useKindeAuth();
 
-  const showClaims = useCallback(async () => {
-    const claims = await getClaims();
+  const showClaims = useCallback(async (token: 'idToken' | 'accessToken' | undefined) => {
+    const claims = await getClaims<{id_address: string}>(token);
     console.log(claims);
-  }, []);
+  }, [getClaims]);
+
+  const showPermissions = useCallback(async () => {
+    const claims = await getPermission("payments:create");
+    console.log(claims);
+  }, [getPermission]);
+
+  const showFlag = useCallback(async () => {
+
+    const flags = (
+      await getClaim<{ feature_flags: string }, Record<string, { t: "b" | "i" | "s"; v: string }>>("feature_flags")
+    )?.value;
+    const claims = await getFlag<boolean>("testing");
+    console.log(claims);
+  }, [getFlag]);
+
+  const showtUserProfile = useCallback(async () => {
+    const claims = await getUserProfile();
+    console.log(claims);
+  }, [getUserProfile]);
+
+  const doLogin = useCallback(async () => {
+    await login({
+      redirectUri: window.location.origin,
+      
+    }
+    );
+  }, [login])
 
   return (
     <>
@@ -48,7 +76,11 @@ export default function LoggedIn() {
               <br />
               Build the important stuff.
             </p>
-            <button onClick={showClaims} className="btn btn-light">Show claims</button>
+            <button onClick={() => showClaims('accessToken')} className="btn btn-light">Show access claims</button>
+            <button onClick={() => showClaims('idToken')} className="btn btn-light">Show id token claims</button>
+            <button onClick={showPermissions} className="btn btn-light">Show permissions</button>
+            <button onClick={showFlag} className="btn btn-light">Show flag</button>
+            <button onClick={showtUserProfile} className="btn btn-light">show user</button>
           </div>
           <section className="next-steps-section">
             <h2 className="text-heading-1">Next steps for you</h2>
