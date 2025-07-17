@@ -9,6 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       domain={import.meta.env.VITE_KINDE_DOMAIN}
       logoutUri={import.meta.env.VITE_KINDE_LOGOUT_URL}
       redirectUri={import.meta.env.VITE_KINDE_REDIRECT_URL}
+      useInsecureForRefreshToken={true}
       callbacks={
         {
           onSuccess: async(user, state, context) => {
