@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@kinde-oss/kinde-auth-react':
-        specifier: 5.7.2-1
-        version: 5.7.2-1(expo-secure-store@14.0.1(expo@52.0.27(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react-native@0.77.0(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 5.7.2-2
+        version: 5.7.2-2(expo-secure-store@14.0.1(expo@52.0.27(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react-native@0.77.0(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -1062,14 +1062,14 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@kinde-oss/kinde-auth-react@5.7.2-1':
-    resolution: {integrity: sha512-GPcOwvnzhlP4aPE/FM5xcd5LtQDG/CEiVl4FYuSMsLEfTWDJbxxh89Hljl6+Ie0SaM7tK2YtayrNWSak3veO7w==}
+  '@kinde-oss/kinde-auth-react@5.7.2-2':
+    resolution: {integrity: sha512-YLqY02oNRwkF0SuclKNjgOUgnqo80Xk4+6H5xUm+9MW3TwDlxuEXOCvbDlcQX1GH9diMHHQRB8BqXkjWQchGfg==}
     peerDependencies:
       react: ^17 || ^18 || ^19
       react-dom: ^17 || ^18 || ^19
 
-  '@kinde/js-utils@0.25.1-2':
-    resolution: {integrity: sha512-PJY5gh6Qymw7sJQcjkV5+hALM2Lyoxu11eovlnmP+5yoQ27x9iGnCWpt3nh+Fl+/T5D6rLn3l10DwQcpeuDMPg==}
+  '@kinde/js-utils@0.25.1':
+    resolution: {integrity: sha512-7SoA684zLqQhjR6YfaTlnVN2hGs7JSDMWH+z3fY/kxVY4AK3D3MuUrKdnbemeF1kjFsMQrafdi+Vl/Ggpg4Cew==}
     peerDependencies:
       expo-secure-store: '>=11.0.0'
     peerDependenciesMeta:
@@ -5671,15 +5671,15 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@kinde-oss/kinde-auth-react@5.7.2-1(expo-secure-store@14.0.1(expo@52.0.27(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react-native@0.77.0(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@kinde-oss/kinde-auth-react@5.7.2-2(expo-secure-store@14.0.1(expo@52.0.27(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react-native@0.77.0(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@kinde/js-utils': 0.25.1-2(expo-secure-store@14.0.1(expo@52.0.27(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react-native@0.77.0(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)))
+      '@kinde/js-utils': 0.25.1(expo-secure-store@14.0.1(expo@52.0.27(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react-native@0.77.0(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
       - expo-secure-store
 
-  '@kinde/js-utils@0.25.1-2(expo-secure-store@14.0.1(expo@52.0.27(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react-native@0.77.0(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)))':
+  '@kinde/js-utils@0.25.1(expo-secure-store@14.0.1(expo@52.0.27(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react-native@0.77.0(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)))':
     dependencies:
       '@kinde/jwt-decoder': 0.2.0
     optionalDependencies:
