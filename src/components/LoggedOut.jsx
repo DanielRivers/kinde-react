@@ -8,7 +8,7 @@ export default function LoggedOut() {
           <h1 className="text-display-3">KindeAuth</h1>
           <div>
             <LoginLink className="btn btn-ghost sign-in-btn" loginHint="daniel@kinde.com">Sign in</LoginLink>
-            <LoginLink className="btn btn-ghost sign-in-btn" org_code="org_56ec0f10067b6" loginHint="daniel@kinde.com">Sign in [org]</LoginLink>
+            <LoginLink className="btn btn-ghost sign-in-btn" orgCode="org_56ec0f10067b6" loginHint="daniel@kinde.com">Sign in [org]</LoginLink>
             
             {/* <LoginLink loginHint="daniel+2@kinde.com" className="btn btn-ghost sign-in-btn">Sign in Dan2</LoginLink>
             <LoginLink loginHint="me@danielrivers.com" className="btn btn-ghost sign-in-btn">Sign in Me</LoginLink>
